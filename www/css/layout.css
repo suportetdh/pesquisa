@@ -1,0 +1,212 @@
+/*
+ * @file: layout.css;
+ * @author: Renato Araujo;
+ * @authorCompany: TDH Websites;
+ * @authorEmail: suporte@tdh.com.br;
+ * @authorURL: www.tdh.com.br;
+ */
+
+/*
+ * APP GENERAL STYLE 
+ */
+.app {  }
+
+/*
+ * HEADER 
+ */
+.header {
+text-transform: uppercase;
+*zoom: 1;
+}
+.header:before,
+.header:after {
+display: table;
+content: "";
+overflow: hidden;
+}
+.header:after {
+clear: both;
+}
+.header .image {
+display: block;
+margin: 30px auto;
+max-width: 530px;
+position: relative;
+width: 100%;
+}
+.header .heading {
+font-size: 25px;
+margin: 30px 0;
+text-transform: uppercase;
+}
+.header .loading {
+position: absolute;
+top: 65px;
+right: 2%;
+}
+
+/*
+ * CONTENT 
+ */
+
+/* Nav */
+.nav {  }
+.nav ul {  }
+.nav ul li {  }
+.nav ul li a {  }
+.nav ul li a .ui-btn-inner {
+padding: 75px 10px 30px !important;
+}
+.nav ul li a .ui-btn-text {
+font-size: 20px;
+}
+.nav ul li a .ui-icon {
+background-image: url(../lib/images/icons-36-white.png);
+top: 20px !important;
+margin-left: -18px !important;
+border-radius: 50px 50px 50px 50px;
+	-moz-border-radius: 50px 50px 50px 50px;
+	-ms-border-radius: 50px 50px 50px 50px;
+	-o-border-radius: 50px 50px 50px 50px;
+	-webkit-border-radius: 50px 50px 50px 50px;
+width: 36px;
+height: 36px;
+}
+.nav ul li a#exit .ui-icon {
+background-image: url(../img/icons-36-white.png);
+background-position: -2px -1px;
+}
+
+/* new search */
+#new-search {  }
+#new-search .ui-btn-inner {  }
+#new-search .ui-btn-text {  }
+#new-search .ui-icon {
+background-position: -1px 1px;
+}
+
+/* sync questions */
+#sync-questions {  }
+#sync-questions .ui-btn-inner {  }
+#sync-questions .ui-btn-text {  }
+#sync-questions .ui-icon {
+background-position: -503px 1px;
+}
+
+/* sync searches */
+#sync-searches {  }
+#sync-searches .ui-btn-inner {  }
+#sync-searches .ui-btn-text {  }
+#sync-searches .ui-icon {
+background-position: -1220px 1px;
+}
+
+/* Info Text */
+.info-text {
+background: #eb7201;
+padding: 20px 10px;
+margin: 25px 0 30px;
+border-radius: 0;
+color: #fff;
+text-shadow: none;
+text-align: center;
+font-size: 30px;
+border-radius: 10px;
+}
+.info-text p {
+margin: 0.5em 0;
+font-weight: normal;
+}
+.info-text p strong {
+font-weight: bold;
+font-size: 32px;
+}
+
+/*
+ * Form
+ */
+.form {  }
+.form .field {
+margin: 10px 0 30px;
+}
+.form .field input {
+font-size: 20px;
+}
+.form .button {  }
+.form .button button {  }
+
+/*
+ * Button
+ */
+.ui-btn {
+margin: 20px 0;
+}
+.ui-btn-inner {
+font-size: 25px;
+padding: 0.8em;
+text-transform: uppercase;
+}
+.ui-btn-text {  }
+
+/* Button Close */
+.button-close {
+*zoom: 1;
+}
+.button-close:before,
+.button-close:after {
+display: table;
+content: "";
+line-height: 0;
+}
+.button-close:after {
+clear: both;
+}
+.button-close a {
+background: #e9e9e9;
+border-radius: 5px 5px 5px 5px;
+color: #fff !important;
+display: block;
+float: right;
+font-size: 45px;
+padding: 5px 20px;
+text-decoration: none;
+}
+
+/*
+ * Group Label 
+ */
+.group-label {
+display: block !important;
+font-size: 35px !important;
+font-weight: bold !important;
+margin: 0 0 1em !important;
+}
+
+/*
+ * FOOTER 
+ */
+.footer {  }
+
+/*
+ * Copyright 
+ */
+.copyright {  }
+.copyright:before,
+.copyright:after {
+display: block;
+content: "";
+line-height: 0;
+}
+.copyright:after {
+clear: both;
+}
+.copyright span {
+display: block;
+float: left;
+margin: 8px 0 0 15px;
+}
+.copyright img {
+display: block;
+float: right;
+margin: 0 15px 0 0;
+}
