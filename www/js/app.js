@@ -452,6 +452,7 @@ var app = {
 	},
 	initialize: function() {
 		var self = this;
+		$('#status').val(JSON.stringify(self.searches.get()));
 		
 		/** Verifica se o usuario esta logado **/
 		if(self.users.logged()) {
@@ -464,6 +465,7 @@ var app = {
 					$('body').append(self.dialogGroup());
 				} else {
 					navigator.notification.alert("Por favor aguarde a sincronizacao terminar para iniciar a pesquisa!", function() {}, 'Alerta!');
+					return false;
 				}
 			});
 			
@@ -473,6 +475,7 @@ var app = {
 					$('body').append(self.dialogSyncQuestions());
 				} else {
 					navigator.notification.alert("Por favor aguarde uma sincronizacao terminar para iniciar outra!", function() {}, 'Alerta!');
+					return false;
 				}
 			});
 			
@@ -482,6 +485,7 @@ var app = {
 					$('body').append(self.dialogSyncSearches());
 				} else {
 					navigator.notification.alert("Por favor aguarde uma sincronizacao terminar para iniciar outra!", function() {}, 'Alerta!');
+					return false;
 				}
 			});
 			
@@ -491,6 +495,7 @@ var app = {
 					$('body').append(self.dialogLogout());
 				} else {
 					navigator.notification.alert("Por favor aguarde a sincronizacao terminar para sair da aplicacao!", function() {}, 'Alerta!');
+					return false;
 				}
 			});
 			
