@@ -311,7 +311,7 @@ var app = {
 									+ ' data-value="" class="group-button-question" data-role="button" data-theme="b" data-icon="arrow-r" data-iconpos="right">Iniciar pesquisa</a>';
 			html += '		</div>';
 			html += '	</div>';
-			html += '	<div class="footer" data-role="footer" data-position="fixed" data-theme="c"><p class="copyright"><span>&copy; 2013 - Rodovi&aacute;ria de Goi&acirc;nia</span><img src="img/logo-tdh.png" alt="TDH Websites" /></p></div>';
+			html += '	<div class="footer" data-role="footer" data-position="fixed" data-theme="c"><p class="copyright"><span>&copy; 2013 - Terminal Rodovi&aacute;rio de Goi&acirc;nia</span><img src="img/logo-tdh.png" alt="TDH Websites" /></p></div>';
 			html += '</div>';
 		}
 		
@@ -366,7 +366,7 @@ var app = {
 				
 				html += '		</div>';
 				html += '	</div>';
-				html += '	<div class="footer" data-role="footer" data-position="fixed" data-theme="c"><p class="copyright"><span>&copy; 2013 - Rodovi&aacute;ria de Goi&acirc;nia</span><img src="img/logo-tdh.png" alt="TDH Websites" /></p></div>';
+				html += '	<div class="footer" data-role="footer" data-position="fixed" data-theme="c"><p class="copyright"><span>&copy; 2013 - Terminal Rodovi&aacute;rio de Goi&acirc;nia</span><img src="img/logo-tdh.png" alt="TDH Websites" /></p></div>';
 				html += '</div>';
 				
 				posicao++;
@@ -396,7 +396,7 @@ var app = {
 									+ ' data-iconpos="right">Nova pesquisa</a>';
 			html += '		</div>';
 			html += '	</div>';
-			html += '	<div class="footer" data-role="footer" data-theme="c"><p class="copyright"><span>&copy; 2013 - Rodovi&aacute;ria de Goi&acirc;nia</span><img src="img/logo-tdh.png" alt="TDH Websites" /></p></div>';
+			html += '	<div class="footer" data-role="footer" data-theme="c"><p class="copyright"><span>&copy; 2013 - Terminal Rodovi&aacute;rio de Goi&acirc;nia</span><img src="img/logo-tdh.png" alt="TDH Websites" /></p></div>';
 			html += '</div>';
 		}*/
 		
@@ -422,7 +422,7 @@ var app = {
 				+ '				</div>'
 				+ '			</form>'
 				+ '		</div>'
-				+ '		<div class="footer" data-role="footer" data-position="fixed" data-theme="c"><p class="copyright"><span>&copy; 2013 - Rodovi&aacute;ria de Goi&acirc;nia</span><img src="img/logo-tdh.png" alt="TDH Websites" /></p></div>'
+				+ '		<div class="footer" data-role="footer" data-position="fixed" data-theme="c"><p class="copyright"><span>&copy; 2013 - Terminal Rodovi&aacute;rio de Goi&acirc;nia</span><img src="img/logo-tdh.png" alt="TDH Websites" /></p></div>'
 				+ '	</div>';
 		
 		return html;
@@ -445,7 +445,7 @@ var app = {
 				+ '				<a href="#main">&times;</a>'
 				+ '			</div>'
 				+ '		</div>'
-				+ '		<div class="footer" data-role="footer" data-position="fixed" data-theme="c"><p class="copyright"><span>&copy; 2013 - Rodovi&aacute;ria de Goi&acirc;nia</span><img src="img/logo-tdh.png" alt="TDH Websites" /></p></div>'
+				+ '		<div class="footer" data-role="footer" data-position="fixed" data-theme="c"><p class="copyright"><span>&copy; 2013 - Terminal Rodovi&aacute;rio de Goi&acirc;nia</span><img src="img/logo-tdh.png" alt="TDH Websites" /></p></div>'
 				+ '	</div>';
 		}
 		
@@ -565,6 +565,8 @@ var app = {
 						self.searches.set(self.search.get());
 						self.search.clear();
 					}
+					
+					$('.group-button-question').removeClass('ui-btn-active');
 				} else {
 					var resposta = {
 							grupo: $(this).data('groupid'),
