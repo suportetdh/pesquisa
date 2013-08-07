@@ -152,12 +152,13 @@ var app = {
 			var self = this;
 			var url = 'http://www.rodoviariadegoiania.com/sistemas/pesquisa/index.php/sincronizar/pesquisa/' + uid + '/' + token;
 			var header = $('#main .header');
+			var searches = self.get();
 			
 			$.ajax({
 				url: url,
 				type: 'POST',
 				data: self.get(),
-				dataType: 'jsonp',
+				dataType: 'json',
 				crossDomain: true,
 				timeout: 120000,
 				beforeSend: function() {
@@ -452,7 +453,6 @@ var app = {
 	},
 	initialize: function() {
 		var self = this;
-		$('#status').val(JSON.stringify(self.searches.get()));
 		
 		/** Verifica se o usuario esta logado **/
 		if(self.users.logged()) {
