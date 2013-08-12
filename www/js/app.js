@@ -157,7 +157,7 @@ var app = {
 			$.ajax({
 				url: url,
 				type: 'POST',
-				data: self.get(),
+				data: { 'searches': JSON.stringify(self.get().searches) },
 				dataType: 'json',
 				crossDomain: true,
 				timeout: 120000,
